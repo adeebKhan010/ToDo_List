@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+body {
+   background-color: rgb(232, 238, 238);
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 20px;
+   border: 2px solid rgba(128, 128, 128, 0.4);
+   width: 100%;
+   max-width: 600px;
+   margin: auto;
+   margin-top: 100px;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+
+.input-container {
+   width: 100%;
+   max-width: 500px;
+   text-align: center;
+   padding: 20px;
+}
+
+h1 {
+   margin-bottom: 20px;
+}
+
+h1 span {
+   color: #218c74;
+   text-decoration: underline;
+   text-underline-offset: 4px;
+}
+
+.input-container input {
+   font-size: 16px;
+   border: none;
+   outline: none;
+   padding: 12px;
+   margin-block: 12px;
+   border-radius: 4px;
+}
+
+.input-container input[type="text"] {
+   width: 70%;
+}
+
+.input-container input[type="button"] {
+   background-color: #218c74;
+   color: white;
+   font-weight: 700;
+   padding-inline: 24px;
+   cursor: pointer;
+   margin-left: 8px;
+   transition: background-color 0.125s linear;
+}
+
+.input-container input[type="button"]:hover {
+   background-color: #10ac84;
+}
+
+ul {
+   width: 80%;
+   max-width: 450px;
+}
+
+ul li {
+   list-style-type: none;
+   border: 0.125px solid #a19f9f;
+   border-radius: 8px;
+   padding: 8px 12px;
+   margin-block-end: 12px;
+   background-color: #fff;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   cursor: pointer;
+   transition: background-color 0.2s;
+}
+
+ul li:hover {
+   background-color: #cbcaca;
+}
+
+ul li p {
+   flex-grow: 1;
+   padding: 2px;
+}
+
+.btn {
+   font-size: 16px;
+   border: none;
+   background: none;
+   outline: none;
+   font-weight: 600;
+   padding: 8px;
+   cursor: pointer;
+}
+
+.deleteBtn {
+   color: #b71540;
+}
+
+.editBtn {
+   color: #218c74;
+}
+
+.pointer {
+   background-color: #cbcaca;
+}
+
+@media screen and (max-width: 680px) {
+   .container {
+      width: 80%;
+   }
+
+   .input-container {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .input-container input[type="text"] {
+      width: 100%;
+   }
+
+   h1 {
+      font-size: 24px;
+   }
+
+   ul {
+      width: 100%;
+   }
+
+   ul li {
+      display: block;
+   }
+
+   .btn {
+      padding-left: 2px;
+   }
+}
